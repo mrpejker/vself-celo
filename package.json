@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-cloud-run-hello-world",
+  "version": "0.0.1",
+  "description": "Hello World application for Cloud Run",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **.js",
+    "fix": "eslint --fix *.js",
+    "test": "mocha test/*.test.js --check-leaks --timeout 5000"
+  },
+  "author": "Google LLC",
+  "license": "0BSD",
+  "engines": {
+    "node": ">=11.14"
+  },
+  "dependencies": {
+    "@celo/contractkit": "^2.0.0",
+    "celo": "^1.1.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "eslint": "8.16.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "gaxios": "5.0.0",
+    "mocha": "9.2.2",
+    "prettier": "2.6.2"
+  }
+}

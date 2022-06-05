@@ -8,7 +8,8 @@ const privateKeyToAddress =
 const kit = ContractKit.newKitFromWeb3(web3);
 require("dotenv").config();
 const PRIVATE_KEY = "1759b69a2c21c8dc097982a1bbadab9c337a961a4b0db64d56b054d8bf120a77";
-
+const CONTRACT_ADDRESS = "0xc277D564D8D29323e9CDf83d80d5Be81308117b1";
+const democontract = require("./contract/x.json");
 
 const app = express();
 // Serve the files in /assets at the URI /assets.
@@ -26,6 +27,7 @@ async function awaitWrapper() {
   const address = privateKeyToAddress(PRIVATE_KEY);
   console.log(address);
 
+  initContract();
   //let tx = await kit.connection.sendTransaction({
     //from: address,
     // change to Inga??
@@ -36,7 +38,22 @@ async function awaitWrapper() {
   //console.log(receipt);
 }
 
+async function initContract() {
+  // Check the Celo network ID
+  const networkId = await web3.eth.net.getId();
 
+  // Get the contract associated with the current network
+  const deployedNetwork = democontract.networks[networkId];
+
+  // Create a new contract instance with the HelloWorld contract info
+  let instance = new kit.web3.eth.Contract(
+    democontract.abi,
+    deployedNetwork && deployedNetwork.address
+  );
+
+  getName(instance);
+  setName(instance, "hello world!");
+}
 
 app.get('/', async (req, res) => {
   // can replace this code with my Celo contarct call

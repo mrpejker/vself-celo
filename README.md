@@ -1,6 +1,6 @@
-# Cloud Run Hello World with Cloud Code
+# vSelf application on Celo
 
-"Hello World" is a [Cloud Run](https://cloud.google.com/run/docs) application that renders a simple webpage.
+ is a [Cloud Run](https://cloud.google.com/run/docs) application that renders a simple webpage.
 
 For details on how to use this sample as a template in Cloud Code, read the documentation for Cloud Code for [VS Code](https://cloud.google.com/code/docs/vscode/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 

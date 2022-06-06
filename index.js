@@ -7,7 +7,7 @@ const privateKeyToAddress =
   require("@celo/utils/lib/address").privateKeyToAddress;
 const kit = ContractKit.newKitFromWeb3(web3);
 require("dotenv").config();
-const PRIVATE_KEY = "1759b69a2c21c8dc097982a1bbadab9c337a961a4b0db64d56b054d8bf120a77";
+//const PRIVATE_KEY = "1759b69a2c21c8dc097982a1bbadab9c337a961a4b0db64d56b054d8bf120a77";
 const CONTRACT_ADDRESS = "0xc277D564D8D29323e9CDf83d80d5Be81308117b1";
 const democontract = require("./contract/x.json");
 

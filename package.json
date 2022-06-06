@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@celo/contractkit": "^2.0.0",
+    "@openzeppelin/contracts": "^4.6.0",
     "celo": "^1.1.5",
     "dotenv": "^16.0.1",
     "express": "^4.17.1",

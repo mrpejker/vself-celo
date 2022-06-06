@@ -33,7 +33,6 @@ For details on how to use this sample as a template in Cloud Code, read the docu
 ![image](./img/status-bar.png)
 
 2. Use the Cloud Run Emulator dialog to specify your [builder option](https://cloud.google.com/code/docs/vscode/deploying-a-cloud-run-app#deploying_a_cloud_run_service). Cloud Code supports Docker, Jib, and Buildpacks. See the skaffold documentation on [builders](https://skaffold.dev/docs/pipeline-stages/builders/) for more information about build artifact types.  
-![image](./img/build-config.png)
 
 3. Click ‘Run’. Cloud Code begins building your image.
 

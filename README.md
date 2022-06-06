@@ -1,6 +1,22 @@
-# vSelf application on Celo
+# vSelf application on Celo blockchain
 
- is a [Cloud Run](https://cloud.google.com/run/docs) application that renders a simple webpage.
+# MyTicket Contract (Truffle + Remote Node)
+ 
+ 'MyTicket' contract is supported by truffle and celo 
+ - Utilizes ERC721 standard for access regulation based on NFTs
+
+Truffle v5.1.39 (core: 5.1.39)
+Solidity - 0.8.4 (solc-js)
+Node v16.7.0
+Web3.js v1.2.1
+
+Uninstall the current version of Truffle, `npm uninstall -g truffle`.
+
+Reinstall with `npm install -g truffle@5.1.39`.
+
+# API for vSelf application on Celo 
+
+We use a [Cloud Run](https://cloud.google.com/run/docs) application that renders a simple webpage.
 
 For details on how to use this sample as a template in Cloud Code, read the documentation for Cloud Code for [VS Code](https://cloud.google.com/code/docs/vscode/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
@@ -46,13 +62,4 @@ For details on how to use this sample as a template in Cloud Code, read the docu
 2. View the build process in the output window. Once the build has finished, you will receive a notification from the Event Log. Click 'View' to access the local URLs for your deployed services.  
 ![image](./img/local-success.png)
 
----
-## Sign up for User Research
 
-We want to hear your feedback!
-
-The Cloud Code team is inviting our user community to sign-up to participate in Google User Experience Research. 
-
-If you’re invited to join a study, you may try out a new product or tell us what you think about the products you use every day. At this time, Google is only sending invitations for upcoming remote studies. Once a study is complete, you’ll receive a token of thanks for your participation such as a gift card or some Google swag. 
-
-[Sign up using this link](https://google.qualtrics.com/jfe/form/SV_4Me7SiMewdvVYhL?reserved=1&utm_source=In-product&Q_Language=en&utm_medium=own_prd&utm_campaign=Q1&productTag=clou&campaignDate=January2021&referral_code=UXbT481079) and answer a few questions about yourself, as this will help our research team match you to studies that are a great fit.
